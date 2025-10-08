@@ -1,0 +1,299 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lavangi Parihar, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\lavan\OneDrive\Desktop\Digital_Sys_Lab\Embedded_Project\main.uvprojx
+Project File Date:  04/17/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/retarget_io.c(409): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  409 |   \return    The return value is <96>1 if an error occurs.
+      |                                  ^
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/retarget_io.c(516): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  516 |         ch = *buf++;
+      |               ^~~
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/retarget_io.c(527): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  527 |         ch = *buf++;
+      |               ^~~
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/retarget_io.c(593): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  593 |       *buf++ = (uint8_t)ch;
+      |        ^~~
+4 warnings generated.
+compiling retarget_io.c...
+RTE/Device/STM32F429ZITx/system_stm32f4xx.c(49): warning: In file included from...
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   11 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   12 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+RTE/Device/STM32F429ZITx/system_stm32f4xx.c(264): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  264 |   tmp = AHBPrescTable[((RCC->CFGR & RCC_CFGR_HPRE) >> 4)];
+      |         ^~~~~~~~~~~~~
+3 warnings generated.
+compiling system_stm32f4xx.c...
+main.c(1): warning: In file included from...
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(11): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   11 |   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+      |                                                ^
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f4xx.h(12): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+   12 |   *                code will be based on direct access to peripheral<92>s registers 
+      |                                                                     ^
+main.c(2): warning: In file included from...
+./..\..\..\..\Downloads\model_weights_uint8.h(9): warning: no previous extern declaration for non-static variable 'conv2d_weights' [-Wmissing-variable-declarations]
+    9 | uint8_t conv2d_weights[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    9 | uint8_t conv2d_weights[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(228): warning: no previous extern declaration for non-static variable 'conv2d_bias' [-Wmissing-variable-declarations]
+  228 | uint8_t conv2d_bias[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(228): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  228 | uint8_t conv2d_bias[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(243): warning: no previous extern declaration for non-static variable 'conv2d_1_weights' [-Wmissing-variable-declarations]
+  243 | uint8_t conv2d_1_weights[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(243): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  243 | uint8_t conv2d_1_weights[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(1398): warning: no previous extern declaration for non-static variable 'conv2d_1_bias' [-Wmissing-variable-declarations]
+ 1398 | uint8_t conv2d_1_bias[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(1398): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 1398 | uint8_t conv2d_1_bias[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(1421): warning: no previous extern declaration for non-static variable 'conv2d_2_weights' [-Wmissing-variable-declarations]
+ 1421 | uint8_t conv2d_2_weights[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(1421): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 1421 | uint8_t conv2d_2_weights[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(6032): warning: no previous extern declaration for non-static variable 'conv2d_2_bias' [-Wmissing-variable-declarations]
+ 6032 | uint8_t conv2d_2_bias[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(6032): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 6032 | uint8_t conv2d_2_bias[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(6071): warning: no previous extern declaration for non-static variable 'conv2d_3_weights' [-Wmissing-variable-declarations]
+ 6071 | uint8_t conv2d_3_weights[] = {
+      |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(6071): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 6071 | uint8_t conv2d_3_weights[] = {
+      | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(24506): warning: no previous extern declaration for non-static variable 'conv2d_3_bias' [-Wmissing-variable-declarations]
+ 24506 | uint8_t conv2d_3_bias[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(24506): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 24506 | uint8_t conv2d_3_bias[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(24577): warning: no previous extern declaration for non-static variable 'conv2d_4_weights' [-Wmissing-variable-declarations]
+ 24577 | uint8_t conv2d_4_weights[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(24577): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 24577 | uint8_t conv2d_4_weights[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(43012): warning: no previous extern declaration for non-static variable 'conv2d_4_bias' [-Wmissing-variable-declarations]
+ 43012 | uint8_t conv2d_4_bias[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(43012): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 43012 | uint8_t conv2d_4_bias[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(43051): warning: no previous extern declaration for non-static variable 'conv2d_5_weights' [-Wmissing-variable-declarations]
+ 43051 | uint8_t conv2d_5_weights[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(43051): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 43051 | uint8_t conv2d_5_weights[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(52270): warning: no previous extern declaration for non-static variable 'conv2d_5_bias' [-Wmissing-variable-declarations]
+ 52270 | uint8_t conv2d_5_bias[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(52270): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 52270 | uint8_t conv2d_5_bias[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(52293): warning: no previous extern declaration for non-static variable 'conv2d_6_weights' [-Wmissing-variable-declarations]
+ 52293 | uint8_t conv2d_6_weights[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(52293): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 52293 | uint8_t conv2d_6_weights[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(54600): warning: no previous extern declaration for non-static variable 'conv2d_6_bias' [-Wmissing-variable-declarations]
+ 54600 | uint8_t conv2d_6_bias[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(54600): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 54600 | uint8_t conv2d_6_bias[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(54615): warning: no previous extern declaration for non-static variable 'conv2d_7_weights' [-Wmissing-variable-declarations]
+ 54615 | uint8_t conv2d_7_weights[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(54615): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 54615 | uint8_t conv2d_7_weights[] = {
+       | ^
+./..\..\..\..\Downloads\model_weights_uint8.h(55050): warning: no previous extern declaration for non-static variable 'conv2d_7_bias' [-Wmissing-variable-declarations]
+ 55050 | uint8_t conv2d_7_bias[] = {
+       |         ^
+./..\..\..\..\Downloads\model_weights_uint8.h(55050): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+ 55050 | uint8_t conv2d_7_bias[] = {
+       | ^
+main.c(3): warning: In file included from...
+./uart.h(36): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'char' [-Wimplicit-int-conversion]
+   36 |     return USART3->DR;
+      |     ~~~~~~ ~~~~~~~~^~
+main.c(33): warning: result of comparison of unsigned expression < 0 is always false [-Wtautological-unsigned-zero-compare]
+   33 |                 if (feature_map[c][i][j] < 0)
+      |                     ~~~~~~~~~~~~~~~~~~~~ ^ ~
+main.c(9): warning: no previous extern declaration for non-static variable 'input_buffer' [-Wmissing-variable-declarations]
+    9 | uint8_t input_buffer[IMG_SIZE][IMG_SIZE];
+      |         ^
+main.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+    9 | uint8_t input_buffer[IMG_SIZE][IMG_SIZE];
+      | ^
+main.c(10): warning: no previous extern declaration for non-static variable 'output_feature_map' [-Wmissing-variable-declarations]
+   10 | uint8_t output_feature_map[OUT_CHANNELS][IMG_SIZE][IMG_SIZE];
+      |         ^
+main.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   10 | uint8_t output_feature_map[OUT_CHANNELS][IMG_SIZE][IMG_SIZE];
+      | ^
+main.c(3): warning: In file included from...
+./uart.h(15): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   15 |     GPIOD->AFR[1] |= 0x00000077; // Set alternate function to AF7 (USART3)
+      |     ^~~~~~~~~~
+C:/Users/lavan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h(1252): note: expanded from macro 'GPIOD'
+ 1252 | #define GPIOD               ((GPIO_TypeDef *) GPIOD_BASE)
+      |                             ^
+main.c(3): warning: In file included from...
+./uart.h(30): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   30 |         UART3_SendChar(*str++);
+      |                         ^~~
+main.c(23): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   23 |             input_buffer[i][j] = UART3_ReceiveChar();
+      |             ^~~~~~~~~~~~~~~
+main.c(23): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   23 |             input_buffer[i][j] = UART3_ReceiveChar();
+      |             ^~~~~~~~~~~~
+main.c(33): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   33 |                 if (feature_map[c][i][j] < 0)
+      |                     ^~~~~~~~~~~~~~~~~
+main.c(33): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   33 |                 if (feature_map[c][i][j] < 0)
+      |                     ^~~~~~~~~~~~~~
+main.c(33): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   33 |                 if (feature_map[c][i][j] < 0)
+      |                     ^~~~~~~~~~~
+main.c(34): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   34 |                     feature_map[c][i][j] = 0;
+      |                     ^~~~~~~~~~~~~~~~~
+main.c(34): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   34 |                     feature_map[c][i][j] = 0;
+      |                     ^~~~~~~~~~~~~~
+main.c(34): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   34 |                     feature_map[c][i][j] = 0;
+      |                     ^~~~~~~~~~~
+main.c(54): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   54 |                         sum += input[ii][jj] * weights[w_idx];
+      |                                ^~~~~~~~~
+main.c(54): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   54 |                         sum += input[ii][jj] * weights[w_idx];
+      |                                ^~~~~
+main.c(54): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   54 |                         sum += input[ii][jj] * weights[w_idx];
+      |                                                ^~~~~~~
+main.c(57): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   57 |                 sum += bias[oc];
+      |                        ^~~~
+main.c(61): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   61 |                 output[oc][i][j] = (uint8_t)sum;
+      |                 ^~~~~~~~~~~~~
+main.c(61): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   61 |                 output[oc][i][j] = (uint8_t)sum;
+      |                 ^~~~~~~~~~
+main.c(61): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   61 |                 output[oc][i][j] = (uint8_t)sum;
+      |                 ^~~~~~
+main.c(72): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   72 |                 UART3_SendChar(output_feature_map[c][i][j]);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~
+main.c(72): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   72 |                 UART3_SendChar(output_feature_map[c][i][j]);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+main.c(72): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   72 |                 UART3_SendChar(output_feature_map[c][i][j]);
+      |                                ^~~~~~~~~~~~~~~~~~
+42 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=1264 RO-data=516 RW-data=1168 ZI-data=149088  
+".\Objects\main.axf" - 0 Error(s), 49 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
+                Keil::ARM_Compiler@1.7.2
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDERR Variant: Breakpoint Version: 1.2.0
+   * Component: STDIN Variant: Breakpoint Version: 1.2.0
+   * Component: STDOUT Variant: Breakpoint Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil::STM32F4xx_DFP@2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/lavan/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/lavan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Compiler&ARM Compiler:I/O:STDERR&Breakpoint@1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Compiler&ARM Compiler:I/O:STDIN&Breakpoint@1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Compiler&ARM Compiler:I/O:STDOUT&Breakpoint@1.2.0
+      Source file:   Source/retarget_io.c
+
+   * Component: Keil::Device:Startup@2.6.3
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   MDK/Device/Source/ARM/STM32F42xxx_43xxx_OPT.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f429xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
